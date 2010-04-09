@@ -7,9 +7,6 @@
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = git://github.com/msanders/snipmate.vim.git
-[submodule "bundle/snip-snippets"]
-	path = bundle/snip-snippets
-	url = git://github.com/scrooloose/snipmate-snippets.git
 [submodule "bundle/supertabs"]
 	path = bundle/supertabs
 	url = git://github.com/tsaleh/vim-supertab.git
@@ -19,3 +16,6 @@
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = git://github.com/tpope/vim-surround.git
+[submodule "bundle/snipmate-snippets/snippets"]
+	path = bundle/snipmate-snippets/snippets
+	url = git://github.com/scrooloose/snipmate-snippets.git
