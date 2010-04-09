@@ -13,3 +13,6 @@
 [submodule "bundle/supertabs"]
 	path = bundle/supertabs
 	url = git://github.com/tsaleh/vim-supertab.git
+[submodule "bundle/tcomment"]
+	path = bundle/tcomment
+	url = git://github.com/tsaleh/vim-tcomment.git
