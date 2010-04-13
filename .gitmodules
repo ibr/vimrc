@@ -19,3 +19,6 @@
 [submodule "bundle/snipmate-snippets/snippets"]
 	path = bundle/snipmate-snippets/snippets
 	url = git://github.com/scrooloose/snipmate-snippets.git
+[submodule "bundle/vcscommend"]
+	path = bundle/vcscommend
+	url = git://repo.or.cz/vcscommand
