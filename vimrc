@@ -54,10 +54,8 @@ set expandtab
 
 set grepprg=ack
 
-" set lcs=
-" set fdc=0
-" set nonumber
-
+let g:netrw_http_xcmd= '-source >' " html source rather than rendered in links
+let g:netrw_liststyle=3            " tree view
 
 " File handling stuff
 set dir=/tmp/ " Directory for the swap file
@@ -106,7 +104,6 @@ imap <S-CR>    <CR><CR>end<Esc>-cc
 map <F1> <C-w><C-w>
 map <S-F1> <C-w><S-w>
 map <F4> <esc>:Ack 
-map <F5> <esc>:e **/
 map <F6> :confirm bprevious<CR>
 map <F7> :confirm bnext<CR>
 map <C-Tab> :bnext<CR>
@@ -115,7 +112,7 @@ map <C-S-Tab> :bprevious<CR>
 autocmd FileType ruby map _s :w !ruby -c<CR>
 autocmd FileType ruby set iskeyword+=!,?
 
-autocmd FileType ruby map _r :w<CR>ruby %<CR>
+autocmd FileType ruby,eruby,rspec map _r :w<CR>ruby %<CR>
 autocmd FileType php  map _r :w<CR>php %<CR>
 autocmd FileType sass map _r :w<CR>:!sass --style compact %<.sass %<.css<CR>
 
@@ -124,6 +121,8 @@ cmap Q quitall<CR>
 map _c !pbcopy<CR>u
 map _p V!pbpaste<CR>
 " map _t :tjump <C-R><C-w><CR> " tag jump
+map _e <esc>:e **/
+map _b \be
 
 "NERDTree
 let NERDTreeIgnore=['\.pyc$']
@@ -137,7 +136,6 @@ highlight Buf ctermfg=white ctermbg=blue
 let g:buftabs_active_highlight_group="Buf"
 let g:buftabs_separator = "~"
 
-map _b \be
 
 " Buffer management
 nnoremap <leader>bd :Bclose<CR>|   " Close buffer

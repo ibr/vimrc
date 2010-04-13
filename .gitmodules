@@ -1,6 +1,3 @@
-[submodule "bundle/NERDTree"]
-	path = bundle/NERDTree
-	url = git://github.com/scrooloose/nerdtree.git
 [submodule "bundle/rails"]
 	path = bundle/rails
 	url = git://github.com/tpope/vim-rails.git
@@ -19,6 +16,6 @@
 [submodule "bundle/snipmate-snippets/snippets"]
 	path = bundle/snipmate-snippets/snippets
 	url = git://github.com/scrooloose/snipmate-snippets.git
-[submodule "bundle/vcscommend"]
-	path = bundle/vcscommend
-	url = git://repo.or.cz/vcscommand
+[submodule "bundle/git-grep"]
+	path = bundle/git-grep
+	url = git://github.com/tjennings/git-grep-vim
